@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+    <title>Gebührenrechner</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+        body{
+            overflow: visible;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .text{
+            margin-left: 4%;
+            margin-right: 4%;
+        }
+
+        hr{
+            width: 92vw;
+        }
+
+        .disclaimer{
+            margin-left: 4%;
+            margin-right: 4%;
+            font-family: arial;
+            font-size: x-large;
+            margin-top: -2%;
+        }
+        .button{
+          margin-top: 5vw;
+          width: 11vw;
+        }
+        .header{
+          font-size:x-large;
+        }
+        @media screen and (max-width: 600px){
+          .button{
+            width: 15vw;
+            height: 5vw;
+            font-size: 3vw;
+          }
+        } 
+        @media screen and (max-width: 400px){
+          .button{
+            width: 20vw;
+            height: 7vw;
+            font-size: 4vw;
+          }
+        } 
+    </style>
+  </head>
+
+  <body>
+
+    <div class="topnav" href = "auswertung.html">
+      <div class="row">
+      </div>
+    </div>
+ 
+    <h3 class="header">Geld Gesendet:</h3>
+    <p class="text">
+        Geben Sie hier einen Betrag ein, welchen Sie per Paypal senden möchten und Sie erfahren wie viel Geld beim Empfänger ankommt.
+    </p>
+
+    <hr>
+
+    <h3 class="header"> Geld Empfangen </h3>
+    <p class="text">
+        Geben Sie hier den Betrag ein, der nach Abzug aller Gebühren beim Empfänger ankommen soll.
+    </p>
+
+    <hr>
+    <h5 class="header"> Disclaimer </h5>
+    <p class="disclaimer">
+        Diese App steht in keinerlei Verbindung zu Paypal.
+        Die Inhalte wurden Sorgfältig recherchiert, dennoch kann keine Gewähr übernommen werden für die Richtigkeit und Aktualität der Inhalte.
+    </p>
+
+    <button class="button" onclick="location.href='index.html'"><b>Zurück</button>
+
+    <br><br>
+
+  </body>
+</html> 

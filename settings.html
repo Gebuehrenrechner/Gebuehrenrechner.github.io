@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+    <title>Gebührenrechner</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+        .header{
+            font-size: 4vw;
+            margin-top: 3vw;
+        }
+        .number{
+            width: 8vw;
+            height:4vw;
+            text-align: center;
+            font-size: 2.5vw;
+            position: absolute;
+            left: 34.5vw;
+            top: 15vw;
+        }
+        .number2{
+            width: 8vw;
+            height: 4vw;
+            text-align: center;
+            font-size: 2.5vw;
+            position: absolute;
+            left: 53vw;
+            top: 15vw;
+        }
+        .settingsText{
+            font-size: 2.5vw;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            left: 45vw;
+            top: 13.4vw;
+        }
+        .settingsText2{
+            font-size: 2.5vw;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            left: 63vw;
+            top: 13.4vw;
+        }
+        .button{
+            margin-top: 6vw;
+            height: 4vw;
+            width: 9vw;
+            font-size: large;
+        }
+        #reset{
+          width: 13vw;
+        }
+        @media screen and (max-width: 1000px){
+          .button{
+            margin-top: 6vw;
+            height: 4vw;
+            width: 15vw;
+            font-size: large;
+        }
+          #reset{
+            width: 20vw;
+          }
+        }
+        @media screen and (max-width: 700px){
+          .button{
+            margin-top: 6vw;
+            height: 4vw;
+            width: 18vw;
+            font-size: large;
+        }
+          #reset{
+            width: 23vw;
+          }
+        }   
+        @media screen and (max-width: 600px){
+          .button, #reset{
+            width: 25vw;
+            height: 8vw;
+            font-size: 3vw;
+          }
+          .header{
+            font-size: 6vw;
+          }
+          .number{
+            width: 8vw;
+            height:4vw;
+            left: 34.5vw;
+            top: 25vw;
+        }
+        .number2{
+            width: 8vw;
+            height: 4vw;
+            left: 53vw;
+            top: 25vw;
+        }
+        .settingsText{
+            font-size: 2.5vw;
+            left: 45vw;
+            top: 23.4vw;
+        }
+        .settingsText2{
+            font-size: 2.5vw;
+            left: 64vw;
+            top: 23.4vw;
+        }
+        .header{
+          font-size: 8vw;
+        }
+        } 
+        @media screen and (max-width: 400px){
+          .button{
+            width: 25vw;
+            height: 7vw;
+            font-size: 4vw;
+          }
+          .number{
+            width: 12vw;
+            height: 6vw;
+            left: 26.5vw;
+            top: 32vw;
+            font-size: 4vw;
+        }
+        .number2{
+            width: 12vw;
+            height: 6vw;
+            left: 58vw;
+            top: 32vw;
+            font-size: 4vw;
+        }
+        .settingsText{
+            font-size: 5vw;
+            left: 43vw;
+            top: 28.4vw;
+        }
+        .settingsText2{
+            font-size: 5vw;
+            left: 73vw;
+            top: 28.4vw;
+        }
+        @media screen and (max-width: 300px){
+          .button #reset{
+            width: 25vw;
+            height: 11vw;
+            font-size: 80vw;
+          }
+          .number{
+            width: 8vw;
+            height:4vw;
+            left: 32.5vw;
+            top: 35vw;
+        }
+        .number2{
+            width: 8vw;
+            height: 4vw;
+            left: 55vw;
+            top: 35vw;
+        }
+        .settingsText{
+            font-size: 2.5vw;
+            left: 45vw;
+            top: 32.4vw;
+            font-size: 4vw;
+        }
+        .settingsText2{
+            font-size: 2.5vw;
+            left: 67vw;
+            top: 32.4vw;
+            font-size: 4vw;
+        }
+        } 
+    </style>
+  </head>
+
+  <body>
+
+    <div class="topnav" href = "auswertung.html">
+      <div class="row">
+      </div>
+    </div>
+    <h1 class="header">
+        Gebühren anpassen
+    </h1>
+
+    <div>
+        <input type="number" value="2.49" id="percent" class="number"> 
+        <p class="settingsText">% &nbsp; +</p> 
+        <input type="number" value="0.35" id="euro" class="number2"> 
+        <p class="settingsText2">€</p> 
+        <br><br><br><br><br>
+        <button class="button" onclick="save()"><b>Speichern</button>
+        <br><br>
+        <button class="button" id="reset" onclick="backup()"><b>Zurücksetzen</button>
+    </div>
+ 
+
+  </body>
+  <script>
+      var euro = localStorage.getItem("euro")
+    var percent = localStorage.getItem("percent")
+
+    if(euro==null){
+      euro = 0.35
+    }
+    if(isNaN(euro)){
+      euro = 0.35
+    }
+    if(percent==null){
+      percent = 2.49
+    }  
+    if(isNaN(percent)){
+      percent = 2.49
+    }
+
+    percent = Math.round(percent*10000)/10000
+
+    document.getElementById('euro').value = euro
+    document.getElementById('percent').value = percent
+      function save(){
+          var percent = document.getElementById("percent").value
+          var euro = document.getElementById("euro").value
+          localStorage.setItem('percent', percent)
+          localStorage.setItem('euro', euro)
+          window.location.href = "index.html";
+      }
+
+      function backup(){
+        localStorage.setItem('percent', 2.49)
+        localStorage.setItem('euro', 0.35)
+        document.getElementById("percent").value = 2.49
+        document.getElementById("euro").value = 0.35
+      }
+  </script>
+</html> 

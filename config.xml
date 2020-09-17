@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "Gebuehren_25_05_1998_julian_lau_10_2020"
+    versionCode = "20"
+    version     = "2.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>Gebührenrechner Für Paypal Gebühren</name>
+
+  <description>
+      Gebührenrechner für Paypal Gebühren
+  </description>
+
+<preference name="android-minSdkVersion"  value="16" />
+
+<preference name="android-targetSdkVersion"  value="29" />
+
+<preference name="orientation"  value="portrait" /> 
+
+<preference name="fullscreen" value="false"/>
+
+  <icon src="icon.png" />
+
+  <author email="julian.lau@aol.com">
+      Julian Lau
+  </author>
+
+</widget>
