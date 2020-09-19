@@ -376,72 +376,60 @@ body{
 	}
 	.firstDiv{
 		margin-top: 30vw;
-		margin-left: 9vw;
-		width: 50vw;
-		height: 40vw;
-	}
-	.text{
-		font-size: 5.3vw;
-	}
-	#input1, #input2{
-		font-size: 3vw;
-		padding-left: 1vw;
-		width: 13vw;
+		margin-left: 2vw;
+		width: 65vw;
+		height: 50vw;
 	}
 	.secondDiv{
 		top: 95vw;
-		left: 24vw;
-		width: 50vw;
-		height: 40vw;
+		left: 17vw;
+		width: 65vw;
+		height: 50vw;
 	}
-	#calcButton{
-		width: 9.5vw;
-		height: 6vw;
-		font-size: 3vw;
+	.text{
+		font-size: 6.6vw;
 	}
-	#calcButton2{
-		width: 9.5vw;
-		height: 6vw;
-		font-size: 3vw;
-	}
-	#solution1{
+	#input1, #input2{
 		font-size: 4.5vw;
+		padding-left: 1vw;
+		width: 13vw;
 	}
-	#solution2{
-		font-size: 4.5vw;
+	#calcButton, #calcButton2{
+		width: 12.5vw;
+		height: 7vw;
+		font-size: 4vw;
+	}
+	#solution1, #solution2{
+		font-size: 5vw;
 	}
 }	
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 375px){
 	.firstDiv{
-		margin-top: 40vw;
-		margin-left: 5vw;
-		width: 60vw;
-		height: 40vw;
+		margin-top: 33vw;
 	}
 	.secondDiv{
-		top: 110vw;
-		left: 20vw;
-		width: 60vw;
-		height: 40vw;
-	}
-	.text{
-		font-size: 6vw;
+		top: 107vw;
 	}
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 335px){
 	.firstDiv{
-		margin-top: 45vw;
-		margin-left: 5vw;
-		width: 60vw;
-		height: 40vw;
+		margin-top: 37vw;
+		margin-left: 2vw;
 	}
 	.secondDiv{
-		top: 125vw;
-		left: 20vw;
-		width: 60vw;
-		height: 40vw;
+		top: 110vw;
+		left: 17vw;
+	}
+}
+
+@media screen and (max-width: 310px){
+	.firstDiv{
+		margin-top: 40vw;
+	}
+	.secondDiv{
+		top: 120vw;
 	}
 	.text{
 		font-size: 6vw;
