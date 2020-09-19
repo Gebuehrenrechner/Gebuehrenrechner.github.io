@@ -155,7 +155,6 @@ body{
 	}
 	#input1, #input2{
 		font-size: 3vw;
-		padding-left: 1vw;
 		width: 8vw;
 	}
 	#solution1, #solution2{
@@ -217,7 +216,6 @@ body{
 	}
 	#input1, #input2{
 		font-size: 3vw;
-		padding-left: 1vw;
 		width: 10vw;
 	}
 	#solution1, #solution2{
@@ -250,7 +248,6 @@ body{
 	}
 	#input1, #input2{
 		font-size: 4vw;
-		padding-left: 1vw;
 		width: 12vw;
 	}
 	#solution1, #solution2{
@@ -391,7 +388,6 @@ body{
 	}
 	#input1, #input2{
 		font-size: 4.5vw;
-		padding-left: 1vw;
 		width: 13vw;
 	}
 	#calcButton, #calcButton2{
