@@ -41,7 +41,7 @@ body{
 	width: 3vw;
 	background: none;
 	margin-top: 11vw;
-	margin-right: 37.5vw;
+	margin-right: 36.5vw;
 }
 
 .helpButton{
@@ -139,16 +139,16 @@ body{
 
 @media screen and (max-width: 800px){
 	.firstDiv{
-		margin-top: 7vw;
-		margin-left: 17.5vw;
-		width: 35vw;
-		height: 22vw;
+		margin-top: 10vw;
+		margin-left: 15vw;
+		width: 40vw;
+		height: 24vw;
 	}
 	.secondDiv{
-		top: 41vw;
-		left: 32.5vw;
-		width: 35vw;
-		height: 22vw;
+		top: 46vw;
+		left: 30vw;
+		width: 40vw;
+		height: 24vw;
 	}
 	.text{
 		font-size: 3vw;
@@ -161,45 +161,54 @@ body{
 	#solution1, #solution2{
 		font-size: 2.5vw;
 	}
+	.googlePlay{
+		width: 20vw;
+	}
 }
 
 @media screen and (max-width: 740px){
 	.firstDiv{
-		margin-top: 9vw;
-		margin-left: 17.5vw;
+		margin-top: 11vw;
+		margin-left: 15vw;
 	}
 	.secondDiv{
-		top: 44vw;
-		left: 32.5vw;
+		top: 48vw;
+		left: 30vw;
 	}
 }
 
 @media screen and (max-width: 700px){
 	.firstDiv{
-		margin-top: 10vw;
-		margin-left: 17.5vw;
+		margin-top: 13vw;
+		margin-left: 15vw;
 	}
 	.secondDiv{
-		top: 47vw;
-		left: 32.5vw;
+		top: 52vw;
+		left: 30vw;
 	}
 }
 
 @media screen and (max-width: 670px){
 	.firstDiv{
 		margin-top: 12vw;
-		margin-left: 17.5vw;
+		margin-left: 15vw;
 	}
 	.secondDiv{
 		top: 51vw;
-		left: 32.5vw;
+		left: 30vw;
 	}
 }
 
 @media screen and (max-width: 640px){
 	.firstDiv{
-		margin-top: 10vw;
+		margin-top: 14vw;
 		margin-left: 15vw;
+		width: 40vw;
+		height: 30vw;
+	}
+	.secondDiv{
+		top: 57vw;
+		left: 30vw;
 		width: 40vw;
 		height: 30vw;
 	}
@@ -214,78 +223,146 @@ body{
 	#solution1, #solution2{
 		font-size: 3vw;
 	}
-	.secondDiv{
-		top: 55vw;
-		left: 30vw;
-		width: 40vw;
-		height: 30vw;
-	}
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 600px){
+	.topnav a{
+		font-size: 5.5vw;
+	}
+	.settingsImage, .helpImage{
+		margin-top: 16vw;
+		width: 5vw;
+	}
 	.firstDiv{
 		margin-top: 14vw;
-		margin-left: 15vw;
+		margin-left: 10vw;
+		width: 50vw;
+		height: 35vw;
 	}
 	.secondDiv{
-		top: 62vw;
-		left: 30vw;
+		top: 64vw;
+		left: 25vw;
+		width: 50vw;
+		height: 35vw;
+	}
+	.text{
+		font-size: 4.5vw;
+	}
+	#input1, #input2{
+		font-size: 4vw;
+		padding-left: 1vw;
+		width: 12vw;
+	}
+	#solution1, #solution2{
+		font-size: 3.5vw;
+	}
+	#calcButton, #calcButton2{
+		width: 8vw;
+		height: 5vw;
+		font-size: 3vw;
+	}
+}	
+
+@media screen and (max-width: 550px){
+	.topnav a{
+		font-size: 5.5vw;
+	}
+	.settingsImage, .helpImage{
+		margin-top: 16vw;
+		width: 5vw;
+	}
+	#calcButton, #calcButton2{
+		width: 8vw;
+		height: 5vw;
+		font-size: 3vw;
+	}
+	.firstDiv{
+		margin-top: 17vw;
+		margin-left: 10vw;
+	}
+	.secondDiv{
+		top: 68vw;
+		left: 25vw;
 	}
 	.topnav a{
 		font-size: 5vw;
 	}
-	.settingsImage, .helpImage{
-		margin-top: 14vw;
-		width: 5vw;
+	.googlePlay{
+		width: 22vw;
 	}
 }
 
 
 @media screen and (max-width: 495px){
-	.firstDiv{
-		margin-top: 22vw;
-		margin-left: 12.5vw;
-		width: 45vw;
-		height: 30vw;
-	}
-	.secondDiv{
-		top: 70vw;
-		left: 27.5vw;
-		width: 45vw;
-		height: 30vw
-	}
-	#solution1, #solution2{
-		font-size: 3vw;
-	}
-	#calcButton, #calcButton2{
-		width: 8vw;
-		height: 5vw;
-		font-size: 2.5vw;
-	}
 	.topnav a{
 		font-size: 6vw;
 	}
 	.settingsImage, .helpImage{
-		margin-top: 17vw;
+		margin-top: 18vw;
 		width: 6vw;
 	}
+	.firstDiv{
+		margin-top: 23vw;
+		margin-left: 6vw;
+		width: 55vw;
+		height: 38vw;
+	}
+	.secondDiv{
+		top: 78vw;
+		left: 21vw;
+		width: 55vw;
+		height: 38vw
+	}
+	#solution1, #solution2{
+		font-size: 3.9vw;
+	}
+	#calcButton, #calcButton2{
+		width: 11vw;
+		height: 6vw;
+		font-size: 3.5vw;
+	}
 	.text{
-		font-size: 4.3vw;
+		font-size: 5.4vw;
 	}
 }
 
 @media screen and (max-width: 450px){
+	.topnav a{
+		font-size: 6.5vw;
+	}
+	.settingsImage, .helpImage{
+		margin-top: 19.5vw;
+		width: 6.5vw;
+	}
 	.firstDiv{
-		margin-top: 25vw;
-		margin-left: 12.5vw;
-		width: 45vw;
-		height: 30vw;
+		margin-top: 26vw;
+		margin-left: 3.5vw;
 	}
 	.secondDiv{
-		top: 77vw;
-		left: 27.5vw;
-		width: 45vw;
-		height: 30vw
+		top: 91vw;
+		left: 18.5vw;
+		width: 60vw;
+	}
+	.firstDiv, .secondDiv{
+		width: 62.5vw;
+		height: 45vw;
+	}
+	.text{
+		font-size: 6vw;
+	}
+	#solution1, #solution2{
+		font-size: 4.5vw;
+	}
+	#input1, #input2{
+		width: 12vw;
+		height: 5vw;
+	}
+	#calcButton, #calcButton2{
+		width: 12vw;
+		height: 6vw;
+	}
+	.googlePlay{
+		width: 20vw;
 	}
 }
 
