@@ -381,13 +381,13 @@ body{
 		height: 50vw;
 	}
 	.secondDiv{
-		top: 95vw;
+		top: 100vw;
 		left: 17vw;
 		width: 65vw;
 		height: 50vw;
 	}
 	.text{
-		font-size: 6.6vw;
+		font-size: 6.9vw;
 	}
 	#input1, #input2{
 		font-size: 4.5vw;
